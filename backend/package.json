@@ -1,0 +1,57 @@
+{
+    "name": "bus-management-system",
+    "version": "1.0.0",
+    "description": "A backend API for managing buses, bookings, users, and feedback using Node.js, Express, and MongoDB.",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "nodemon server.js",
+        "lint": "eslint . --ext .js"
+    },
+    "keywords": [
+        "bus",
+        "management",
+        "nodejs",
+        "express",
+        "mongodb",
+        "backend"
+    ],
+    "author": "Your Name",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "express-validator": "^6.15.0",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^7.8.3",
+        "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.50.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-plugin-import": "^2.28.0",
+        "nodemon": "^3.0.1"
+    },
+    "eslintConfig": {
+        "extends": [
+            "airbnb-base"
+        ],
+        "env": {
+            "node": true,
+            "es2021": true
+        },
+        "rules": {
+            "no-console": "off",
+            "quotes": [
+                "error",
+                "double"
+            ],
+            "semi": [
+                "error",
+                "always"
+            ]
+        }
+    }
+}
